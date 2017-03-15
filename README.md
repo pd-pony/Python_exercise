@@ -1,2 +1,2 @@
 # Python_exercise
-for daily exercise
+This repository is ready for daily exercises.
