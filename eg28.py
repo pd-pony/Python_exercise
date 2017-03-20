@@ -1,0 +1,26 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @Author  : Peidong
+# @Site    : 
+# @File    : eg28.py
+# @Software: PyCharm
+"""
+题目：求100之内的素数。
+"""
+# 输出指定范围内的素数
+
+# take input from the user
+lower = int(input("输入区间最小值: "))
+upper = int(input("输入区间最大值: "))
+sum = 0
+
+for num in range(lower, upper + 1):
+    # 素数大于 1
+    for i in range(2, num):
+        if (num % i) == 0:
+            break
+    else:
+         sum+=1
+         print(num)
+
+print(sum)
